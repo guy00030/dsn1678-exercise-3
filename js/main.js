@@ -1,18 +1,33 @@
-var sales = $('.sales');
-var sales__details = $('.sales__details');
+var box = $('.box');
+var showBox = $('.show_box');
 
-/*
-	Functions are reusable pieces of code
-	They're basically code stored inside variables
-*/
+
 var buttonClickHandler = function () {
-	var isActive = sales.attr('data-state');
+	var isActive = box.attr('data-state');
 
 	if (isActive == 'active') {
-		sales.attr('data-state', 'inactive');
+		box.attr('data-state', 'inactive');
 	} else {
-		theHeader.attr('data-state', 'active');
+		box.attr('data-state', 'active');
 	}
 };
 
-sales__details.on('click', buttonClickHandler);
+showBox.on('click', buttonClickHandler);
+
+
+
+var box2 = $('.box2');
+var showBox2 = $('.show_box2');
+
+
+var buttonClickHandler = function () {
+	var isActive = box2.attr('data-state');
+
+	if (isActive == 'active') {
+		box2.attr('data-state', 'inactive');
+	} else {
+		box2.attr('data-state', 'active');
+	}
+};
+
+showBox2.on('click', buttonClickHandler);

@@ -156,3 +156,20 @@ body {
 
   text-indent: 100%;
 }
+
+
+.box {
+  opacity: 0;
+}
+
+.box[data-state="active"] {
+  opacity: 1;
+}
+
+.box2 {
+  opacity: 0;
+}
+
+.box2[data-state="active"] {
+  opacity: 1;
+}
